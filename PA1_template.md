@@ -7,7 +7,6 @@ output:
 Reproducible Research: Peer Assessment 1
 =========================================
   
-  
 ## Loading and preprocessing the data
 This code reads the file "activity.csv" and loads into a dataframe named "raw", then transforms the "date" column to the appropriate data type.  
 

@@ -7,7 +7,6 @@ output:
 Reproducible Research: Peer Assessment 1
 =========================================
   
-  
 ## Loading and preprocessing the data
 This code reads the file "activity.csv" and loads into a dataframe named "raw", then transforms the "date" column to the appropriate data type.  
 
@@ -36,7 +35,7 @@ median(spd$steps)
 ## What is the average daily activity pattern?
 **1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)**
   
-```{r timeseries, echo=TRUE}
+```{r timeseries, echo=TRUE, fig.path='figure/'}
 spi <- aggregate(steps ~ interval, data=raw, FUN=mean,na.rm=TRUE)
 with(spi,plot(interval,steps,type="l"))
 ```
